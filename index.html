@@ -1,0 +1,2305 @@
+<!DOCTYPE html>
+<html lang="kk" id="html-root">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Автовышка жалдау — Hyundai HD 78 | Ayza Lift</title>
+  <meta name="description"
+    content="Hyundai HD 78 автовышкасын жалдаңыз! 18–22м биіктік. Тәулік бойы қызмет. ☎ 87076465902" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* ─────────────────────────────────────────
+   TOKENS
+───────────────────────────────────────── */
+    :root {
+      --ink: #05101f;
+      --navy: #0a1628;
+      --navy2: #0e1f3a;
+      --navy3: #152c52;
+      --gold: #f0a500;
+      --gold2: #ffbf3c;
+      --gold3: #ffe08a;
+      --white: #ffffff;
+      --muted: #8aa0bf;
+      --text: #c8d6ea;
+      --green: #25d366;
+      --green2: #12a64e;
+      --r: 16px;
+      --r2: 24px;
+      --glow: 0 0 40px rgba(240, 165, 0, .18);
+    }
+
+    /* ─────────────────────────────────────────
+   RESET
+───────────────────────────────────────── */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--navy);
+      color: var(--white);
+      overflow-x: hidden;
+      line-height: 1.65
+    }
+
+    img {
+      display: block;
+      max-width: 100%
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      font-family: inherit
+    }
+
+    ::-webkit-scrollbar {
+      width: 5px
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--ink)
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--gold);
+      border-radius: 3px
+    }
+
+    /* ─────────────────────────────────────────
+   NOISE TEXTURE OVERLAY
+───────────────────────────────────────── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      opacity: .4;
+    }
+
+    /* ─────────────────────────────────────────
+   NAVBAR
+───────────────────────────────────────── */
+    #nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 0 5%;
+      transition: background .4s, backdrop-filter .4s, box-shadow .4s;
+    }
+
+    #nav.stuck {
+      background: rgba(5, 16, 31, .88);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, .06);
+    }
+
+    .nav-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 76px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 14px
+    }
+
+    .logo-mark {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      color: var(--navy);
+      box-shadow: 0 4px 20px rgba(240, 165, 0, .35);
+      flex-shrink: 0;
+    }
+
+    .logo-text {
+      font-size: 1rem;
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--white)
+    }
+
+    .logo-text span {
+      color: var(--gold)
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 36px
+    }
+
+    .nav-links a {
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .6px;
+      text-transform: uppercase;
+      color: var(--muted);
+      transition: color .25s;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold);
+      border-radius: 2px;
+      transition: width .25s;
+    }
+
+    .nav-links a:hover {
+      color: var(--white)
+    }
+
+    .nav-links a:hover::after {
+      width: 100%
+    }
+
+    .nav-call {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      color: var(--navy);
+      font-weight: 800;
+      font-size: .82rem;
+      padding: 11px 24px;
+      border-radius: 50px;
+      box-shadow: 0 4px 20px rgba(240, 165, 0, .3);
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .nav-call:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(240, 165, 0, .5)
+    }
+
+    .burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer
+    }
+
+    .burger span {
+      width: 24px;
+      height: 2px;
+      background: var(--gold);
+      border-radius: 2px;
+      transition: .3s
+    }
+
+    /* ─────────────────────────────────────────
+   MOBILE DRAWER
+───────────────────────────────────────── */
+    #drawer {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      background: rgba(5, 16, 31, .97);
+      backdrop-filter: blur(24px);
+      padding: 100px 30px 40px;
+      flex-direction: column;
+      gap: 24px;
+      transform: translateX(100%);
+      transition: transform .4s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    #drawer.open {
+      display: flex;
+      transform: translateX(0)
+    }
+
+    #drawer a {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text);
+      transition: color .2s
+    }
+
+    #drawer a:hover {
+      color: var(--gold)
+    }
+
+    .drawer-call {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      color: var(--navy);
+      font-weight: 800;
+      padding: 18px;
+      border-radius: var(--r2);
+      font-size: 1.1rem;
+    }
+
+    /* ─────────────────────────────────────────
+   HERO
+───────────────────────────────────────── */
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* layered background */
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background: url('truck.jpg') center 40%/cover no-repeat;
+    }
+
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(5, 16, 31, .95) 0%, rgba(5, 16, 31, .7) 60%, rgba(5, 16, 31, .3) 100%);
+    }
+
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 20% 50%, rgba(240, 165, 0, .07) 0%, transparent 70%);
+    }
+
+    /* diagonal accent */
+    .hero-diagonal {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 45%;
+      z-index: 1;
+      background: linear-gradient(270deg, rgba(240, 165, 0, .04), transparent);
+      clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1280px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 5%;
+      padding-top: 100px;
+      padding-bottom: 60px;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(240, 165, 0, .1);
+      border: 1px solid rgba(240, 165, 0, .3);
+      color: var(--gold);
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 8px 20px;
+      border-radius: 50px;
+      margin-bottom: 32px;
+      animation: fadeDown .8s both;
+    }
+
+    .hero-h1 {
+      font-size: clamp(2.6rem, 6.5vw, 5.2rem);
+      font-weight: 900;
+      line-height: 1.07;
+      letter-spacing: -1px;
+      margin-bottom: 28px;
+      animation: fadeUp .9s .1s both;
+      max-width: 680px;
+    }
+
+    .hero-h1 em {
+      font-style: normal;
+      background: linear-gradient(90deg, var(--gold), var(--gold3));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-p {
+      font-size: 1.1rem;
+      color: var(--text);
+      max-width: 520px;
+      font-weight: 400;
+      margin-bottom: 44px;
+      animation: fadeUp .9s .2s both;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      animation: fadeUp .9s .3s both;
+    }
+
+    .btn-gold {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      color: var(--navy);
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 17px 36px;
+      border-radius: 50px;
+      box-shadow: 0 6px 28px rgba(240, 165, 0, .4);
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(240, 165, 0, .6)
+    }
+
+    .btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      background: linear-gradient(135deg, var(--green), var(--green2));
+      color: #fff;
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 17px 36px;
+      border-radius: 50px;
+      box-shadow: 0 6px 28px rgba(37, 211, 102, .3);
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .btn-wa:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(37, 211, 102, .55)
+    }
+
+    /* hero stats row */
+    .hero-stats {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      background: rgba(5, 16, 31, .7);
+      backdrop-filter: blur(16px);
+      border-top: 1px solid rgba(255, 255, 255, .06);
+    }
+
+    .hero-stats-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 5%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      divide-x: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .stat {
+      padding: 22px 0;
+      text-align: center;
+      border-right: 1px solid rgba(255, 255, 255, .07);
+    }
+
+    .stat:last-child {
+      border-right: none
+    }
+
+    .stat-n {
+      font-size: 1.9rem;
+      font-weight: 900;
+      background: linear-gradient(90deg, var(--gold), var(--gold2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .stat-l {
+      font-size: .72rem;
+      color: var(--muted);
+      font-weight: 600;
+      margin-top: 4px;
+      letter-spacing: .5px
+    }
+
+    /* ─────────────────────────────────────────
+   SHARED SECTION
+───────────────────────────────────────── */
+    .section {
+      padding: 110px 5%
+    }
+
+    .section-center {
+      text-align: center
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--gold);
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .eyebrow i {
+      font-size: .65rem
+    }
+
+    .section-h2 {
+      font-size: clamp(1.9rem, 4vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -.5px;
+      margin-bottom: 18px;
+    }
+
+    .section-lead {
+      font-size: 1rem;
+      color: var(--text);
+      max-width: 600px;
+      margin-bottom: 70px
+    }
+
+    .section-center .section-lead {
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    /* ─────────────────────────────────────────
+   SERVICES GRID
+───────────────────────────────────────── */
+    .svc-bg {
+      background: var(--navy2)
+    }
+
+    .svc-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      border-radius: var(--r2);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .06);
+    }
+
+    .svc-item {
+      background: rgba(255, 255, 255, .025);
+      padding: 44px 36px;
+      transition: background .3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .svc-item::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(240, 165, 0, .07), transparent);
+      opacity: 0;
+      transition: opacity .35s;
+    }
+
+    .svc-item:hover {
+      background: rgba(255, 255, 255, .05)
+    }
+
+    .svc-item:hover::before {
+      opacity: 1
+    }
+
+    .svc-num {
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: rgba(240, 165, 0, .08);
+      line-height: 1;
+      margin-bottom: 20px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .svc-icon {
+      margin-bottom: 18px
+    }
+
+    .svc-icon i {
+      font-size: 1.8rem;
+      color: var(--gold);
+      transition: transform .35s;
+    }
+
+    .svc-item:hover .svc-icon i {
+      transform: scale(1.2) rotate(-5deg)
+    }
+
+    .svc-item h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 10px
+    }
+
+    .svc-item p {
+      font-size: .875rem;
+      color: var(--text);
+      line-height: 1.65
+    }
+
+    /* ─────────────────────────────────────────
+   ABOUT / SPECS
+───────────────────────────────────────── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .spec-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    .spec-box {
+      background: rgba(255, 255, 255, .04);
+      border: 1px solid rgba(255, 255, 255, .07);
+      border-radius: var(--r);
+      padding: 24px 22px;
+      transition: border-color .3s, transform .3s;
+    }
+
+    .spec-box:hover {
+      border-color: rgba(240, 165, 0, .3);
+      transform: translateY(-3px)
+    }
+
+    .spec-v {
+      font-size: 1.65rem;
+      font-weight: 900;
+      background: linear-gradient(90deg, var(--gold), var(--gold2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .spec-k {
+      font-size: .75rem;
+      color: var(--muted);
+      font-weight: 700;
+      margin-top: 5px;
+      letter-spacing: .5px
+    }
+
+    /* Photo mosaic — FIXED */
+    .mosaic {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 300px 300px;
+      gap: 12px;
+      border-radius: var(--r2);
+      overflow: hidden;
+    }
+
+    .mosaic-big {
+      grid-row: 1/3
+    }
+
+    /* left tall card */
+    .mosaic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transition: transform .6s ease;
+    }
+
+    .mosaic .mosaic-wrap {
+      overflow: hidden;
+      border-radius: var(--r);
+      position: relative;
+    }
+
+    .mosaic .mosaic-wrap:hover img {
+      transform: scale(1.06)
+    }
+
+    .mosaic .mosaic-cap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 14px 18px;
+      background: linear-gradient(to top, rgba(5, 16, 31, .8), transparent);
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--gold);
+      opacity: 0;
+      transition: opacity .35s;
+    }
+
+    .mosaic .mosaic-wrap:hover .mosaic-cap {
+      opacity: 1
+    }
+
+    /* ─────────────────────────────────────────
+   GALLERY (full width)
+───────────────────────────────────────── */
+    .gal-bg {
+      background: var(--ink)
+    }
+
+    .gal-strip {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 400px;
+      gap: 12px;
+      border-radius: var(--r2);
+      overflow: hidden;
+    }
+
+    .gal-cell {
+      overflow: hidden;
+      position: relative;
+      border-radius: var(--r)
+    }
+
+    .gal-cell img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform .6s ease;
+      display: block;
+    }
+
+    .gal-cell:hover img {
+      transform: scale(1.06)
+    }
+
+    .gal-label {
+      position: absolute;
+      bottom: 18px;
+      left: 18px;
+      z-index: 1;
+      background: rgba(5, 16, 31, .7);
+      backdrop-filter: blur(8px);
+      color: var(--gold);
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 7px 16px;
+      border-radius: 50px;
+      border: 1px solid rgba(240, 165, 0, .25);
+      opacity: 0;
+      transition: opacity .35s;
+    }
+
+    .gal-cell:hover .gal-label {
+      opacity: 1
+    }
+
+    /* ─────────────────────────────────────────
+   ADVANTAGES
+───────────────────────────────────────── */
+    .adv-bg {
+      background: var(--navy2)
+    }
+
+    .adv-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .adv-card {
+      background: rgba(255, 255, 255, .03);
+      border: 1px solid rgba(255, 255, 255, .07);
+      border-radius: var(--r2);
+      padding: 44px 36px;
+      position: relative;
+      overflow: hidden;
+      transition: transform .35s, border-color .35s, box-shadow .35s;
+    }
+
+    .adv-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--gold2));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .4s;
+    }
+
+    .adv-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(240, 165, 0, .2);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, .4)
+    }
+
+    .adv-card:hover::after {
+      transform: scaleX(1)
+    }
+
+    .adv-ico {
+      width: 66px;
+      height: 66px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(240, 165, 0, .15), rgba(240, 165, 0, .04));
+      border: 1px solid rgba(240, 165, 0, .2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.7rem;
+      color: var(--gold);
+      margin-bottom: 26px;
+      transition: transform .35s;
+    }
+
+    .adv-card:hover .adv-ico {
+      transform: rotate(-8deg) scale(1.1)
+    }
+
+    .adv-card h3 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      margin-bottom: 12px
+    }
+
+    .adv-card p {
+      font-size: .875rem;
+      color: var(--text);
+      line-height: 1.7
+    }
+
+    /* ─────────────────────────────────────────
+   CONTACT / CTA
+───────────────────────────────────────── */
+    .cta-bg {
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-bg::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 800px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(240, 165, 0, .06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .contact-items {
+      display: flex;
+      flex-direction: column;
+      gap: 16px
+    }
+
+    .c-card {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      background: rgba(255, 255, 255, .04);
+      border: 1px solid rgba(255, 255, 255, .07);
+      border-radius: var(--r2);
+      padding: 26px 30px;
+      transition: transform .3s, border-color .3s, box-shadow .3s;
+    }
+
+    .c-card:hover {
+      transform: translateX(8px);
+      border-color: rgba(240, 165, 0, .3);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, .3);
+    }
+
+    .c-card.wa-c:hover {
+      border-color: rgba(37, 211, 102, .4)
+    }
+
+    .c-card.ig-c:hover {
+      border-color: rgba(193, 53, 132, .4)
+    }
+
+    .c-ico {
+      width: 58px;
+      height: 58px;
+      border-radius: 15px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+
+    .ico-phn {
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      color: var(--navy)
+    }
+
+    .ico-wa {
+      background: linear-gradient(135deg, #25d366, #12a64e);
+      color: #fff
+    }
+
+    .ico-ig {
+      background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+      color: #fff
+    }
+
+    .ico-clk {
+      background: rgba(240, 165, 0, .1);
+      border: 1px solid rgba(240, 165, 0, .2);
+      color: var(--gold)
+    }
+
+    .c-info h4 {
+      font-size: .68rem;
+      color: var(--muted);
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 6px
+    }
+
+    .c-info p {
+      font-size: 1.08rem;
+      font-weight: 700
+    }
+
+    /* Big CTA box */
+    .cta-box {
+      background: linear-gradient(135deg, rgba(240, 165, 0, .1), rgba(240, 165, 0, .03));
+      border: 1px solid rgba(240, 165, 0, .2);
+      border-radius: var(--r2);
+      padding: 56px 44px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-box::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(240, 165, 0, .08), transparent 70%);
+    }
+
+    .cta-ring {
+      width: 88px;
+      height: 88px;
+      border-radius: 22px;
+      margin: 0 auto 30px;
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      color: var(--navy);
+      box-shadow: 0 12px 40px rgba(240, 165, 0, .45);
+    }
+
+    .cta-box h3 {
+      font-size: 1.8rem;
+      font-weight: 900;
+      margin-bottom: 16px
+    }
+
+    .cta-box p {
+      color: var(--text);
+      margin-bottom: 36px;
+      font-size: .95rem
+    }
+
+    .cta-btns {
+      display: flex;
+      flex-direction: column;
+      gap: 14px
+    }
+
+    .cta-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 17px;
+      border-radius: 50px;
+      font-weight: 800;
+      font-size: 1rem;
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-3px)
+    }
+
+    .cta-btn.gold-btn {
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      color: var(--navy);
+      box-shadow: 0 6px 24px rgba(240, 165, 0, .35)
+    }
+
+    .cta-btn.gold-btn:hover {
+      box-shadow: 0 14px 40px rgba(240, 165, 0, .55)
+    }
+
+    .cta-btn.wa-btn {
+      background: linear-gradient(135deg, var(--green), var(--green2));
+      color: #fff;
+      box-shadow: 0 6px 24px rgba(37, 211, 102, .3)
+    }
+
+    .cta-btn.wa-btn:hover {
+      box-shadow: 0 14px 40px rgba(37, 211, 102, .5)
+    }
+
+    /* ─────────────────────────────────────────
+   FOOTER
+───────────────────────────────────────── */
+    footer {
+      background: var(--ink);
+      border-top: 1px solid rgba(255, 255, 255, .05);
+      padding: 64px 5% 36px;
+    }
+
+    .foot-grid {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2.2fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(255, 255, 255, .06);
+    }
+
+    .foot-brand .logo-mark {
+      margin-bottom: 20px
+    }
+
+    .foot-brand h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin-bottom: 10px
+    }
+
+    .foot-brand p {
+      font-size: .875rem;
+      color: var(--muted);
+      max-width: 300px;
+      line-height: 1.7
+    }
+
+    .foot-col h4 {
+      font-size: .68rem;
+      color: var(--gold);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 22px
+    }
+
+    .foot-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px
+    }
+
+    .foot-col ul li a {
+      font-size: .875rem;
+      color: var(--muted);
+      transition: color .25s
+    }
+
+    .foot-col ul li a:hover {
+      color: var(--white)
+    }
+
+    .foot-bottom {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 32px;
+      font-size: .8rem;
+      color: var(--muted);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .foot-slogan {
+      color: var(--gold);
+      font-weight: 700
+    }
+
+    /* ─────────────────────────────────────────
+   FLOATING WHATSAPP
+───────────────────────────────────────── */
+    #f-wa {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 998;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green), var(--green2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.9rem;
+      color: #fff;
+      box-shadow: 0 6px 30px rgba(37, 211, 102, .5);
+      transition: opacity .4s, transform .3s, box-shadow .3s;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    #f-wa.show {
+      opacity: 1;
+      pointer-events: auto
+    }
+
+    #f-wa:hover {
+      transform: scale(1.12);
+      box-shadow: 0 12px 46px rgba(37, 211, 102, .7)
+    }
+
+    #f-wa .pulse {
+      position: absolute;
+      inset: -8px;
+      border-radius: 50%;
+      border: 2px solid rgba(37, 211, 102, .5);
+      animation: pulse 2.2s ease infinite;
+    }
+
+    /* ─────────────────────────────────────────
+   ANIMATIONS
+───────────────────────────────────────── */
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-16px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(28px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: .8
+      }
+
+      70% {
+        transform: scale(1.6);
+        opacity: 0
+      }
+
+      100% {
+        transform: scale(1.6);
+        opacity: 0
+      }
+    }
+
+    /* scroll-reveal */
+    .sr {
+      opacity: 0;
+      transform: translateY(36px);
+      transition: opacity .75s ease, transform .75s ease
+    }
+
+    .sr.on {
+      opacity: 1;
+      transform: translateY(0)
+    }
+
+    .sr-l {
+      opacity: 0;
+      transform: translateX(-36px);
+      transition: opacity .75s ease, transform .75s ease
+    }
+
+    .sr-l.on {
+      opacity: 1;
+      transform: translateX(0)
+    }
+
+    .sr-r {
+      opacity: 0;
+      transform: translateX(36px);
+      transition: opacity .75s ease, transform .75s ease
+    }
+
+    .sr-r.on {
+      opacity: 1;
+      transform: translateX(0)
+    }
+
+    /* stagger helper */
+    .d1 {
+      transition-delay: .05s
+    }
+
+    .d2 {
+      transition-delay: .12s
+    }
+
+    .d3 {
+      transition-delay: .19s
+    }
+
+    .d4 {
+      transition-delay: .26s
+    }
+
+    .d5 {
+      transition-delay: .33s
+    }
+
+    .d6 {
+      transition-delay: .40s
+    }
+
+    /* ─────────────────────────────────────────
+   RESPONSIVE
+───────────────────────────────────────── */
+    @media(max-width:1024px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 50px
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px
+      }
+
+      .foot-grid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .foot-brand {
+        grid-column: 1/-1
+      }
+
+      .gal-strip {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 280px 280px
+      }
+
+      .svc-grid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .adv-grid {
+        grid-template-columns: 1fr 1fr
+      }
+    }
+
+    @media(max-width:768px) {
+
+      .nav-links,
+      .nav-call {
+        display: none
+      }
+
+      .burger {
+        display: flex
+      }
+
+      .hero-content {
+        padding-bottom: 260px;
+      }
+
+      .hero-h1 {
+        font-size: clamp(2rem, 8vw, 3rem)
+      }
+
+      .hero-stats-inner {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .stat:nth-child(even) {
+        border-right: none;
+      }
+
+      .stat:nth-child(1),
+      .stat:nth-child(2) {
+        border-bottom: 1px solid rgba(255, 255, 255, .08);
+      }
+
+      .mosaic {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto
+      }
+
+      .mosaic-big {
+        grid-row: auto
+      }
+
+      .mosaic .mosaic-wrap {
+        height: 280px
+      }
+
+      .svc-grid {
+        grid-template-columns: 1fr
+      }
+
+      .adv-grid {
+        grid-template-columns: 1fr
+      }
+
+      .gal-strip {
+        grid-template-columns: 1fr;
+        grid-template-rows: unset
+      }
+
+      .gal-cell {
+        height: 250px
+      }
+
+      .foot-grid {
+        grid-template-columns: 1fr
+      }
+
+      .foot-bottom {
+        flex-direction: column;
+        text-align: center
+      }
+    }
+
+    @media(max-width:480px) {
+      .hero-actions {
+        flex-direction: column
+      }
+
+      .btn-gold,
+      .btn-wa {
+        justify-content: center
+      }
+
+      .hero-stats-inner {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .spec-list {
+        grid-template-columns: 1fr
+      }
+    }
+
+    /* ─────────────────────────────────────────
+   LANG SWITCHER
+───────────────────────────────────────── */
+    .lang-switch {
+      display: flex;
+      align-items: center;
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 50px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .lang-btn {
+      padding: 7px 14px;
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .8px;
+      color: var(--muted);
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: background .25s, color .25s;
+      font-family: inherit;
+    }
+
+    .lang-btn.active {
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      color: var(--navy);
+      border-radius: 50px;
+    }
+
+    /* ─────────────────────────────────────────
+   KOREA FLEET SECTION
+───────────────────────────────────────── */
+    .korea-bg {
+      background: var(--navy3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .korea-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 80% at 80% 50%, rgba(240, 165, 0, .07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .korea-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 56px;
+    }
+
+    .korea-flag {
+      font-size: 2.8rem;
+      line-height: 1;
+    }
+
+    .korea-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .korea-card {
+      background: rgba(255, 255, 255, .04);
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--r2);
+      padding: 32px 28px;
+      position: relative;
+      overflow: hidden;
+      transition: transform .35s, border-color .35s, box-shadow .35s;
+    }
+
+    .korea-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--gold2));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .4s;
+    }
+
+    .korea-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(240, 165, 0, .25);
+      box-shadow: 0 20px 56px rgba(0, 0, 0, .4);
+    }
+
+    .korea-card:hover::after {
+      transform: scaleX(1)
+    }
+
+    .korea-card-ico {
+      font-size: 2rem;
+      margin-bottom: 18px;
+    }
+
+    .korea-card-val {
+      font-size: 1.8rem;
+      font-weight: 900;
+      background: linear-gradient(90deg, var(--gold), var(--gold2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .korea-card-lbl {
+      font-size: .78rem;
+      color: var(--muted);
+      font-weight: 700;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .korea-card-desc {
+      font-size: .84rem;
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .korea-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 40px;
+      background: rgba(240, 165, 0, .1);
+      border: 1px solid rgba(240, 165, 0, .25);
+      color: var(--gold);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 10px 22px;
+      border-radius: 50px;
+    }
+
+    @media(max-width:1024px) {
+      .korea-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media(max-width:600px) {
+      .korea-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════ -->
+  <header>
+    <nav id="nav">
+      <div class="nav-inner">
+        <div class="logo">
+          <div class="logo-mark">🏗</div>
+          <div class="logo-text">Ayza <span>Lift</span></div>
+        </div>
+        <div class="nav-links">
+          <a href="#services" data-kk="Қызметтер" data-ru="Услуги">Қызметтер</a>
+          <a href="#about" data-kk="Автовышка" data-ru="Автовышка">Автовышка</a>
+          <a href="#gallery" data-kk="Галерея" data-ru="Галерея">Галерея</a>
+          <a href="#korea" data-kk="Корея техникасы" data-ru="Корейская техника">Корея техникасы</a>
+          <a href="#advantages" data-kk="Артықшылықтар" data-ru="Преимущества">Артықшылықтар</a>
+          <a href="#contact" data-kk="Байланыс" data-ru="Контакты">Байланыс</a>
+        </div>
+        <div class="lang-switch" id="lang-switch">
+          <button class="lang-btn active" id="btn-kk" onclick="setLang('kk')">ҚАЗ</button>
+          <button class="lang-btn" id="btn-ru" onclick="setLang('ru')">РУС</button>
+        </div>
+        <a href="tel:+77076465902" class="nav-call" data-kk="Қоңырау шалу" data-ru="Позвонить"><i
+            class="fas fa-phone-alt"></i> <span data-t="nav-call">Қоңырау шалу</span></a>
+        <div class="burger" id="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <nav id="drawer">
+    <a href="#services" class="dr-link" data-kk="Қызметтер" data-ru="Услуги">Қызметтер</a>
+    <a href="#about" class="dr-link" data-kk="Автовышка" data-ru="Автовышка">Автовышка</a>
+    <a href="#gallery" class="dr-link" data-kk="Галерея" data-ru="Галерея">Галерея</a>
+    <a href="#advantages" class="dr-link" data-kk="Артықшылықтар" data-ru="Преимущества">Артықшылықтар</a>
+    <a href="#contact" class="dr-link" data-kk="Байланыс" data-ru="Контакты">Байланыс</a>
+    <a href="tel:+77076465902" class="drawer-call">
+      <i class="fas fa-phone-alt"></i> 8 707 646 59 02
+    </a>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+  <section id="hero" role="banner">
+    <div class="hero-bg"></div>
+    <div class="hero-diagonal"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <i class="fas fa-hard-hat"></i>
+        Кәсіби биіктік жұмыстары
+      </div>
+      <h1 class="hero-h1">
+        Автовышка жалдау<br>
+        <em>Hyundai HD 78</em>
+      </h1>
+      <p class="hero-p">
+        Кез келген биіктіктегі жұмыстарды сенімді, жедел және қауіпсіз
+        орындаймыз. Тәжірибелі жүргізуші, заманауи жабдық, тәулік бойы дайынбыз.
+      </p>
+      <div class="hero-actions">
+        <a href="tel:+77076465902" class="btn-gold" id="hero-call">
+          <i class="fas fa-phone-alt"></i> Қоңырау шалу
+        </a>
+        <a href="https://wa.me/+77076465902?text=Сәлем!%20Автовышка%20жалдау%20туралы%20сұрайын." target="_blank"
+          class="btn-wa" id="hero-wa">
+          <i class="fab fa-whatsapp"></i> WhatsApp-та жазу
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stats-inner">
+        <div class="stat">
+          <div class="stat-n">24-28м</div>
+          <div class="stat-l">Жұмыс биіктігі</div>
+        </div>
+        <div class="stat">
+          <div class="stat-n">24/7</div>
+          <div class="stat-l">Тәулік бойы қызмет</div>
+        </div>
+        <div class="stat">
+          <div class="stat-n">360°</div>
+          <div class="stat-l">Платформа айналымы</div>
+        </div>
+        <div class="stat">
+          <div class="stat-n">300кг</div>
+          <div class="stat-l">Жүктеме шегі</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     SERVICES
+══════════════════════════════════════ -->
+  <section id="services" class="section svc-bg">
+    <div class="container">
+      <div class="section-center">
+        <div class="eyebrow sr"><i class="fas fa-cogs"></i> Біздің қызметтер</div>
+        <h2 class="section-h2 sr">Қандай жұмыстарды орындаймыз?</h2>
+        <p class="section-lead sr">Кез келген күрделіліктегі биіктік жұмыстары — жедел, сапалы, қауіпсіз.</p>
+      </div>
+      <div class="svc-grid">
+        <div class="svc-item sr d1">
+          <div class="svc-num">01</div>
+          <div class="svc-icon"><i class="fas fa-arrow-up"></i></div>
+          <h3>Биіктікке шығу жұмыстары</h3>
+          <p>Жерден жеткізуге қиын биіктіктерге — платформа арқылы қауіпсіз және жедел шығу.</p>
+        </div>
+        <div class="svc-item sr d2">
+          <div class="svc-num">02</div>
+          <div class="svc-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Электр желілерін тарту</h3>
+          <p>Жоғары және төмен вольтты желілерді монтаждау, жөндеу және қосу жұмыстары.</p>
+        </div>
+        <div class="svc-item sr d3">
+          <div class="svc-num">03</div>
+          <div class="svc-icon"><i class="fas fa-paint-roller"></i></div>
+          <h3>Ғимарат сырлау / жөндеу</h3>
+          <p>Биік ғимараттардың сыртқы қабырғасын сырлау, жылуоқшаулау және жөндеу.</p>
+        </div>
+        <div class="svc-item sr d4">
+          <div class="svc-num">04</div>
+          <div class="svc-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3>Жарықтандыру монтажы</h3>
+          <p>Көше шамдары, жарнама тақталары, LED жарықтар — орнату және жөндеу.</p>
+        </div>
+        <div class="svc-item sr d5">
+          <div class="svc-num">05</div>
+          <div class="svc-icon"><i class="fas fa-tree"></i></div>
+          <h3>Ағаш кесу / абаттандыру</h3>
+          <p>Биік ағаштарды қауіпсіз кесу, бұтақтарды жинау, аумақты тазалау.</p>
+        </div>
+        <div class="svc-item sr d6">
+          <div class="svc-num">06</div>
+          <div class="svc-icon"><i class="fas fa-tools"></i></div>
+          <h3>Өзге де биіктік жұмыстары</h3>
+          <p>Вентиляция, жабын, конструкция монтажы — кез келген тапсырма орындалады.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     ABOUT / SPECS
+══════════════════════════════════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Left: text + specs -->
+        <div class="sr-l">
+          <div class="eyebrow"><i class="fas fa-truck-monster"></i> Техника туралы</div>
+          <h2 class="section-h2">Hyundai HD 78 —<br>Сенімді серіктес</h2>
+          <p style="color:var(--text);font-size:.95rem;line-height:1.75;max-width:480px">
+            Жоғары сапалы Hyundai HD 78 моделіндегі заманауи автовышка.
+            Қауіпсіздік жүйелері, кең жұмыс платформасы және тәжірибелі жүргізуші —
+            барлық биіктік жұмыстары үшін оңтайлы таңдау.
+          </p>
+          <div class="spec-list">
+            <div class="spec-box">
+              <div class="spec-v">28м</div>
+              <div class="spec-k">Жұмыс биіктігі</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-v">7.5м</div>
+              <div class="spec-k">Жұмыс ені</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-v">300кг</div>
+              <div class="spec-k">Платформа жүктемесі</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-v">360°</div>
+              <div class="spec-k">Айналым бұрышы</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-v">Hyundai</div>
+              <div class="spec-k">Шасси маркасы</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-v">HD 78</div>
+              <div class="spec-k">Модель</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: photo mosaic FIXED -->
+        <div class="sr-r">
+          <div class="mosaic">
+            <!-- Big photo left -->
+            <div class="mosaic-wrap mosaic-big">
+              <img src="fleet.jpg" alt="Автовышка паркі — Hyundai HD 78" loading="lazy" />
+              <div class="mosaic-cap">Автовышка паркі</div>
+            </div>
+            <!-- Two stacked right -->
+            <div class="mosaic-wrap">
+              <img src="truck.jpg" alt="Hyundai HD 78 автовышкасы" loading="lazy" />
+              <div class="mosaic-cap">Гаражда дайын</div>
+            </div>
+            <div class="mosaic-wrap">
+              <img src="driver.jpg" alt="Кәсіби жүргізуші" loading="lazy" />
+              <div class="mosaic-cap">Кәсіби жүргізуші</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     GALLERY
+══════════════════════════════════════ -->
+  <section id="gallery" class="section gal-bg">
+    <div class="container">
+      <div class="section-center">
+        <div class="eyebrow sr"><i class="fas fa-images"></i> Фото галерея</div>
+        <h2 class="section-h2 sr">Біздің техника</h2>
+        <p class="section-lead sr">Нақты суреттер — сапамыз бен техникамыздың айғағы.</p>
+      </div>
+      <div class="gal-strip sr">
+        <div class="gal-cell">
+          <img src="fleet.jpg" alt="Автовышка паркі" loading="lazy" />
+          <div class="gal-label">Автовышка паркі</div>
+        </div>
+        <div class="gal-cell">
+          <img src="truck.jpg" alt="Hyundai HD 78" loading="lazy" />
+          <div class="gal-label">HD 78 — гаражда</div>
+        </div>
+        <div class="gal-cell">
+          <img src="driver.jpg" alt="Жүргізуші" loading="lazy" style="object-position:center 15%" />
+          <div class="gal-label">Кәсіби жүргізуші</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     KOREA FLEET
+══════════════════════════════════════ -->
+  <section id="korea" class="section korea-bg">
+    <div class="container">
+      <div class="korea-header sr">
+        <div class="korea-flag">🇰🇷</div>
+        <div>
+          <div class="eyebrow" style="margin-bottom:8px"><i class="fas fa-truck-moving"></i> <span data-kk="Кәсіби парк"
+              data-ru="Профессиональный парк">Кәсіби парк</span></div>
+          <h2 class="section-h2" style="margin-bottom:0" data-kk="Корея техникасы — сенімді таңдауыңыз"
+            data-ru="Корейская техника — ваш надёжный выбор">Корея техникасы — сенімді таңдауыңыз</h2>
+        </div>
+      </div>
+      <div class="korea-grid">
+        <div class="korea-card sr d1">
+          <div class="korea-card-ico">🚜</div>
+          <div class="korea-card-val">4–5</div>
+          <div class="korea-card-lbl" data-kk="Машина саны" data-ru="Количество машин">Машина саны</div>
+          <div class="korea-card-desc"
+            data-kk="Паркімізде 4-5 заманауи Корея автовышкасы бар. Тапсырысты жылдам және бір мезгілде орындай аламыз."
+            data-ru="В нашем парке 4-5 современных корейских автовышки. Можем выполнять заказы быстро и одновременно.">
+            Паркімізде 4-5 заманауи Корея автовышкасы бар. Тапсырысты жылдам және бір мезгілде орындай аламыз.</div>
+        </div>
+        <div class="korea-card sr d2">
+          <div class="korea-card-ico">📐</div>
+          <div class="korea-card-val">28м</div>
+          <div class="korea-card-lbl" data-kk="Максималды биіктік" data-ru="Максимальная высота">Максималды биіктік
+          </div>
+          <div class="korea-card-desc"
+            data-kk="28 метрге дейінгі биіктікте жұмыс орындаймыз. Биік ғимараттар мен инфрақұрылым жобалары үшін өте қолайлы."
+            data-ru="Работаем на высоте до 28 метров. Идеально для высотных зданий и инфраструктурных проектов.">28
+            метрге дейінгі биіктікте жұмыс орындаймыз. Биік ғимараттар мен инфрақұрылым жобалары үшін өте қолайлы.</div>
+        </div>
+        <div class="korea-card sr d3">
+          <div class="korea-card-ico">📦</div>
+          <div class="korea-card-val">3м</div>
+          <div class="korea-card-lbl" data-kk="Кең люлька" data-ru="Широкая люлька">Кең люлька</div>
+          <div class="korea-card-desc"
+            data-kk="Люлька ені — 3 метр. Кең жұмыс алаңы — жылдам әрі ыңғайлы жұмыс жасауға мүмкіндік береді."
+            data-ru="Ширина люльки — 3 метра. Широкая рабочая площадка обеспечивает быструю и удобную работу.">Люлька
+            ені — 3 метр. Кең жұмыс алаңы — жылдам әрі ыңғайлы жұмыс жасауға мүмкіндік береді.</div>
+        </div>
+        <div class="korea-card sr d4">
+          <div class="korea-card-ico">💳</div>
+          <div class="korea-card-val" data-kk="НАЛ/НАЛ ЕМЕС" data-ru="НАЛ/БЕЗНАЛ">НАЛ/НАЛ ЕМЕС</div>
+          <div class="korea-card-lbl" data-kk="Төлем тәсілі" data-ru="Способ оплаты">Төлем тәсілі</div>
+          <div class="korea-card-desc"
+            data-kk="Қолма-қол және қолма-қол емес төлем қабылданады. Заңды тұлғалардан да, жеке тұлғалардан да тапсырыс қабылданады."
+            data-ru="Принимается наличный и безналичный расчёт. Работаем с юридическими и физическими лицами.">Қолма-қол
+            және қолма-қол емес төлем қабылданады. Заңды тұлғалардан да, жеке тұлғалардан да тапсырыс қабылданады.</div>
+        </div>
+        <div class="korea-card sr d5">
+          <div class="korea-card-ico">🗓️</div>
+          <div class="korea-card-val" data-kk="Ұзақ мерзімді" data-ru="Долгосрочно">Ұзақ мерзімді</div>
+          <div class="korea-card-lbl" data-kk="Командировка / Мердігерлік" data-ru="Командировка / Подряд">Командировка
+            / Мердігерлік</div>
+          <div class="korea-card-desc"
+            data-kk="Ұзақ уақытқа командировкаға да баруға дайынмыз. Ірі жобалар мен мердігерлік тапсырмаларды орындаймыз."
+            data-ru="Готовы выезжать в длительные командировки. Выполняем крупные проекты и подрядные задания.">Ұзақ
+            уақытқа командировкаға да баруға дайынмыз. Ірі жобалар мен мердігерлік тапсырмаларды орындаймыз.</div>
+        </div>
+        <div class="korea-card sr d6">
+          <div class="korea-card-ico">👷</div>
+          <div class="korea-card-val" data-kk="Тәжірибелі" data-ru="Опытные">Тәжірибелі</div>
+          <div class="korea-card-lbl" data-kk="Операторлар" data-ru="Операторы">Операторлар</div>
+          <div class="korea-card-desc"
+            data-kk="Операторларымыздың тәжірибесі жеткілікті. Кез келген күрделіліктегі жұмысты дұрыс орындай алады."
+            data-ru="Наши операторы обладают достаточным опытом. Выполнят работу любой сложности правильно и безопасно.">
+            Операторларымыздың тәжірибесі жеткілікті. Кез келген күрделіліктегі жұмысты дұрыс орындай алады.</div>
+        </div>
+      </div>
+      <div class="sr" style="text-align:center">
+        <span class="korea-badge"><i class="fas fa-check-circle"></i> <span
+            data-kk="Барлығы Кореядан келген — сапасы кепілденген"
+            data-ru="Вся техника из Кореи — качество гарантировано">Барлығы Кореядан келген — сапасы
+            кепілденген</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     ADVANTAGES
+══════════════════════════════════════ -->
+  <section id="advantages" class="section adv-bg">
+    <div class="container">
+      <div class="section-center">
+        <div class="eyebrow sr"><i class="fas fa-star"></i> Неліктен біз?</div>
+        <h2 class="section-h2 sr">Біздің артықшылықтарымыз</h2>
+        <p class="section-lead sr">Клиенттер бізге тағы оралатын себептері — сапа, жедділік, адалдық.</p>
+      </div>
+      <div class="adv-grid">
+        <div class="adv-card sr d1">
+          <div class="adv-ico"><i class="fas fa-user-tie"></i></div>
+          <h3>Тәжірибелі жүргізуші</h3>
+          <p>Кәсіби, сертификатталған жүргізуші. Барлық жұмыс қауіпсіздік ережелерін сақтай отырып орындалады.</p>
+        </div>
+        <div class="adv-card sr d2">
+          <div class="adv-ico"><i class="fas fa-bolt"></i></div>
+          <h3>Жедел жауап</h3>
+          <p>Өтінішіңізге 15 минут ішінде жауап береміз. Жедел шығу — біздің басты ұстанымымыз.</p>
+        </div>
+        <div class="adv-card sr d3">
+          <div class="adv-ico"><i class="fas fa-tag"></i></div>
+          <h3>Қолжетімді баға</h3>
+          <p>Нарықтағы ең бәсекелес бағамен жұмыс жасаймыз. Жасырын төлем жоқ, алдын ала есеп береміз.</p>
+        </div>
+        <div class="adv-card sr d4">
+          <div class="adv-ico"><i class="fas fa-clock"></i></div>
+          <h3>Тәулік бойы қызмет</h3>
+          <p>Апта күндері, демалыс, мереке — кез келген уақытта хабарласыңыз, дайырмыз.</p>
+        </div>
+        <div class="adv-card sr d5">
+          <div class="adv-ico"><i class="fas fa-shield-alt"></i></div>
+          <h3>Толық қауіпсіздік</h3>
+          <p>Жабдықтың барлық қауіпсіздік жүйелері жұмыс істейді. Техпаспорт пен сертификаттар бар.</p>
+        </div>
+        <div class="adv-card sr d6">
+          <div class="adv-ico"><i class="fas fa-map-marker-alt"></i></div>
+          <h3>Кез келген нүктеге шығу</h3>
+          <p>Қала ішінде де, ауылда да — тапсырмаңыз болса, біз жетеміз.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     CONTACT
+══════════════════════════════════════ -->
+  <section id="contact" class="section cta-bg">
+    <div class="container">
+      <div class="section-center">
+        <div class="eyebrow sr"><i class="fas fa-headset"></i> Байланыс</div>
+        <h2 class="section-h2 sr">Бізге хабарласыңыз</h2>
+        <p class="section-lead sr">Тегін консультация, баға сұрау немесе жұмыс брондау — осы арқылы байланысыңыз.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-items">
+          <a href="tel:+77076465902" class="c-card sr d1" id="card-phone">
+            <div class="c-ico ico-phn"><i class="fas fa-phone-alt"></i></div>
+            <div class="c-info">
+              <h4>Телефон</h4>
+              <p>8 707 646 59 02</p>
+            </div>
+            <i class="fas fa-chevron-right" style="margin-left:auto;color:var(--muted)"></i>
+          </a>
+          <a href="https://wa.me/+77076465902?text=Сәлем!%20Автовышка%20жалдау%20туралы%20сұрайын." target="_blank"
+            class="c-card wa-c sr d2" id="card-wa">
+            <div class="c-ico ico-wa"><i class="fab fa-whatsapp"></i></div>
+            <div class="c-info">
+              <h4>WhatsApp</h4>
+              <p>8 707 646 59 02</p>
+            </div>
+            <i class="fas fa-chevron-right" style="margin-left:auto;color:var(--muted)"></i>
+          </a>
+          <a href="https://instagram.com/erkebulankizi_ayza" target="_blank" class="c-card ig-c sr d3" id="card-ig">
+            <div class="c-ico ico-ig"><i class="fab fa-instagram"></i></div>
+            <div class="c-info">
+              <h4>Instagram</h4>
+              <p>@erkebulankizi_ayza</p>
+            </div>
+            <i class="fas fa-chevron-right" style="margin-left:auto;color:var(--muted)"></i>
+          </a>
+          <div class="c-card sr d4" style="cursor:default">
+            <div class="c-ico ico-clk"><i class="fas fa-clock"></i></div>
+            <div class="c-info">
+              <h4>Жұмыс уақыты</h4>
+              <p>Тәулік бойы, аптасына 7 күн</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-box sr-r">
+          <div class="cta-ring"><i class="fas fa-headset"></i></div>
+          <h3>Дәл қазір байланысыңыз!</h3>
+          <p>Биіктік жұмыстарын брондаңыз немесе тегін кеңес алыңыз.</p>
+          <div class="cta-btns">
+            <a href="tel:+77076465902" class="cta-btn gold-btn" id="bigcta-phone">
+              <i class="fas fa-phone-alt"></i> Қоңырау шалу
+            </a>
+            <a href="https://wa.me/+77076465902?text=Сәлем!%20Автовышка%20жалдау%20туралы%20сұрайын." target="_blank"
+              class="cta-btn wa-btn" id="bigcta-wa">
+              <i class="fab fa-whatsapp"></i> WhatsApp-та жазу
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+  <footer>
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo-mark">🏗</div>
+        <h3>Ayza Lift — Автовышка жалдау</h3>
+        <p>Hyundai HD 78 автовышкасымен кез келген биіктік жұмысын сенімді және қауіпсіз орындаймыз. Тәулік бойы, апта
+          бойы.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Бөлімдер</h4>
+        <ul>
+          <li><a href="#services">Қызметтер</a></li>
+          <li><a href="#about">Автовышка</a></li>
+          <li><a href="#gallery">Галерея</a></li>
+          <li><a href="#advantages">Артықшылықтар</a></li>
+          <li><a href="#contact">Байланыс</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Байланыс</h4>
+        <ul>
+          <li><a href="tel:+77076465902"><i class="fas fa-phone" style="color:var(--gold);width:16px"></i> 8 707 646 59
+              02</a></li>
+          <li><a href="https://wa.me/+77076465902" target="_blank"><i class="fab fa-whatsapp"
+                style="color:#25d366;width:16px"></i> WhatsApp</a></li>
+          <li><a href="https://instagram.com/erkebulankizi_ayza" target="_blank"><i class="fab fa-instagram"
+                style="color:#c13584;width:16px"></i> @erkebulankizi_ayza</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2025 Ayza Lift. Барлық құқықтар қорғалған.</span>
+      <span class="foot-slogan">🚀 Биікке шығамыз — сіздің тапсырмаңызбен!</span>
+    </div>
+  </footer>
+
+  <!-- FLOATING WA -->
+  <a href="https://wa.me/+77076465902?text=Сәлем!%20Автовышка%20жалдау%20туралы%20сұрайын." target="_blank" id="f-wa"
+    title="WhatsApp" aria-label="WhatsApp арқылы жазу">
+    <div class="pulse"></div>
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ══════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════ -->
+  <script>
+    /* Navbar */
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('stuck', window.scrollY > 60);
+      document.getElementById('f-wa').classList.toggle('show', window.scrollY > 300);
+    }, { passive: true });
+
+    /* Burger */
+    const burger = document.getElementById('burger');
+    const drawer = document.getElementById('drawer');
+    let drawerOpen = false;
+    function toggleDrawer(force) {
+      drawerOpen = force !== undefined ? force : !drawerOpen;
+      if (drawerOpen) {
+        drawer.classList.add('open');
+        drawer.style.display = 'flex';
+      } else {
+        drawer.classList.remove('open');
+        setTimeout(() => { if (!drawerOpen) drawer.style.display = 'none'; }, 400);
+      }
+    }
+    burger.addEventListener('click', () => toggleDrawer());
+    document.querySelectorAll('.dr-link').forEach(l => {
+      l.addEventListener('click', () => toggleDrawer(false));
+    });
+
+    /* Scroll reveal */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('on');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: .1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.sr,.sr-l,.sr-r').forEach(el => io.observe(el));
+
+    /* Smooth anchor scroll */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+
+    /* Hero parallax */
+    const heroBg = document.querySelector('.hero-bg');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY < window.innerHeight * 1.2) {
+        heroBg.style.transform = `translateY(${window.scrollY * 0.28}px)`;
+      }
+    }, { passive: true });
+
+    /* ─── Language Switcher ─── */
+    const translations = {
+      kk: {
+        'html-lang': 'kk',
+        'title': 'Автовышка жалдау — Hyundai HD 78 | Ayza Lift',
+        'hero-eyebrow': 'Кәсіби биіктік жұмыстары',
+        'hero-h1': 'Автовышка жалдау<br><em>Hyundai HD 78</em>',
+        'hero-p': 'Кез келген биіктіктегі жұмыстарды сенімді, жедел және қауіпсіз орындаймыз. Тәжірибелі жүргізуші, заманауи жабдық, тәулік бойы дайынбыз.',
+        'hero-call-btn': '<i class="fas fa-phone-alt"></i> Қоңырау шалу',
+        'hero-wa-btn': '<i class="fab fa-whatsapp"></i> WhatsApp-та жазу',
+        'stat1-l': 'Жұмыс биіктігі', 'stat2-l': 'Тәулік бойы қызмет', 'stat3-l': 'Платформа айналымы', 'stat4-l': 'Жүктеме шегі',
+        'svc-eyebrow': 'Біздің қызметтер', 'svc-h2': 'Қандай жұмыстарды орындаймыз?',
+        'svc-lead': 'Кез келген күрделіліктегі биіктік жұмыстары — жедел, сапалы, қауіпсіз.',
+        'about-eyebrow': 'Техника туралы', 'about-h2': 'Hyundai HD 78 —<br>Сенімді серіктес',
+        'about-p': 'Жоғары сапалы Hyundai HD 78 моделіндегі заманауи автовышка. Қауіпсіздік жүйелері, кең жұмыс платформасы және тәжірибелі жүргізуші — барлық биіктік жұмыстары үшін оңтайлы таңдау.',
+        'gal-eyebrow': 'Фото галерея', 'gal-h2': 'Біздің техника',
+        'gal-lead': 'Нақты суреттер — сапамыз бен техникамыздың айғағы.',
+        'adv-eyebrow': 'Неліктен біз?', 'adv-h2': 'Біздің артықшылықтарымыз',
+        'adv-lead': 'Клиенттер бізге тағы оралатын себептері — сапа, жедділік, адалдық.',
+        'adv1-h': 'Тәжірибелі жүргізуші', 'adv1-p': 'Кәсіби, сертификатталған жүргізуші. Барлық жұмыс қауіпсіздік ережелерін сақтай отырып орындалады.',
+        'adv2-h': 'Жедел жауап', 'adv2-p': 'Өтінішіңізге 15 минут ішінде жауап береміз. Жедел шығу — біздің басты ұстанымымыз.',
+        'adv3-h': 'Қолжетімді баға', 'adv3-p': 'Нарықтағы ең бәсекелес бағамен жұмыс жасаймыз. Жасырын төлем жоқ, алдын ала есеп береміз.',
+        'adv4-h': 'Тәулік бойы қызмет', 'adv4-p': 'Апта күндері, демалыс, мереке — кез келген уақытта хабарласыңыз, дайырмыз.',
+        'adv5-h': 'Толық қауіпсіздік', 'adv5-p': 'Жабдықтың барлық қауіпсіздік жүйелері жұмыс істейді. Техпаспорт пен сертификаттар бар.',
+        'adv6-h': 'Кез келген нүктеге шығу', 'adv6-p': 'Қала ішінде де, ауылда да — тапсырмаңыз болса, біз жетеміз.',
+        'contact-eyebrow': 'Байланыс', 'contact-h2': 'Бізге хабарласыңыз',
+        'contact-lead': 'Тегін консультация, баға сұрау немесе жұмыс брондау — осы арқылы байланысыңыз.',
+        'cta-h3': 'Дәл қазір байланысыңыз!', 'cta-p': 'Биіктік жұмыстарын брондаңыз немесе тегін кеңес алыңыз.',
+        'cta-phone-btn': '<i class="fas fa-phone-alt"></i> Қоңырау шалу',
+        'cta-wa-btn': '<i class="fab fa-whatsapp"></i> WhatsApp-та жазу',
+        'contact-phone-lbl': 'Телефон', 'contact-wa-lbl': 'WhatsApp', 'contact-ig-lbl': 'Instagram', 'contact-clk-lbl': 'Жұмыс уақыты',
+        'contact-clk-val': 'Тәулік бойы, аптасына 7 күн',
+        'foot-brand-h': 'Ayza Lift — Автовышка жалдау',
+        'foot-brand-p': 'Hyundai HD 78 автовышкасымен кез келген биіктік жұмысын сенімді және қауіпсіз орындаймыз. Тәулік бойы, апта бойы.',
+        'foot-col1-h': 'Бөлімдер', 'foot-col2-h': 'Байланыс',
+        'foot-copy': '© 2025 Ayza Lift. Барлық құқықтар қорғалған.',
+        'foot-slogan': '🚀 Биікке шығамыз — сіздің тапсырмаңызбен!',
+        'wa-title': 'WhatsApp арқылы жазу',
+        'wa-msg': 'Сәлем!%20Автовышка%20жалдау%20туралы%20сұрайын.'
+      },
+      ru: {
+        'html-lang': 'ru',
+        'title': 'Аренда автовышки — Hyundai HD 78 | Ayza Lift',
+        'hero-eyebrow': 'Профессиональные высотные работы',
+        'hero-h1': 'Аренда автовышки<br><em>Hyundai HD 78</em>',
+        'hero-p': 'Выполняем работы на любой высоте надёжно, быстро и безопасно. Опытный водитель, современное оборудование, работаем круглосуточно.',
+        'hero-call-btn': '<i class="fas fa-phone-alt"></i> Позвонить',
+        'hero-wa-btn': '<i class="fab fa-whatsapp"></i> Написать в WhatsApp',
+        'stat1-l': 'Рабочая высота', 'stat2-l': 'Круглосуточно', 'stat3-l': 'Поворот платформы', 'stat4-l': 'Грузоподъёмность',
+        'svc-eyebrow': 'Наши услуги', 'svc-h2': 'Какие работы выполняем?',
+        'svc-lead': 'Высотные работы любой сложности — быстро, качественно, безопасно.',
+        'about-eyebrow': 'О технике', 'about-h2': 'Hyundai HD 78 —<br>Надёжный партнёр',
+        'about-p': 'Современная автовышка Hyundai HD 78 высокого качества. Системы безопасности, широкая рабочая платформа и опытный водитель — оптимальный выбор для всех высотных работ.',
+        'gal-eyebrow': 'Фотогалерея', 'gal-h2': 'Наша техника',
+        'gal-lead': 'Реальные фотографии — доказательство нашего качества и техники.',
+        'adv-eyebrow': 'Почему мы?', 'adv-h2': 'Наши преимущества',
+        'adv-lead': 'Причины, по которым клиенты возвращаются к нам — качество, скорость, честность.',
+        'adv1-h': 'Опытный водитель', 'adv1-p': 'Профессиональный, сертифицированный водитель. Все работы выполняются с соблюдением правил безопасности.',
+        'adv2-h': 'Быстрый ответ', 'adv2-p': 'Ответим на вашу заявку в течение 15 минут. Оперативный выезд — наш главный принцип.',
+        'adv3-h': 'Доступные цены', 'adv3-p': 'Работаем по самым конкурентным ценам на рынке. Никаких скрытых платежей, расчёт заранее.',
+        'adv4-h': 'Круглосуточная работа', 'adv4-p': 'Будни, выходные, праздники — звоните в любое время, мы готовы.',
+        'adv5-h': 'Полная безопасность', 'adv5-p': 'Все системы безопасности оборудования исправны. Техпаспорт и сертификаты в наличии.',
+        'adv6-h': 'Выезд в любую точку', 'adv6-p': 'В городе или в селе — если есть задача, мы доедем.',
+        'contact-eyebrow': 'Контакты', 'contact-h2': 'Свяжитесь с нами',
+        'contact-lead': 'Бесплатная консультация, запрос цены или бронирование работ — свяжитесь с нами.',
+        'cta-h3': 'Свяжитесь прямо сейчас!', 'cta-p': 'Забронируйте высотные работы или получите бесплатную консультацию.',
+        'cta-phone-btn': '<i class="fas fa-phone-alt"></i> Позвонить',
+        'cta-wa-btn': '<i class="fab fa-whatsapp"></i> Написать в WhatsApp',
+        'contact-phone-lbl': 'Телефон', 'contact-wa-lbl': 'WhatsApp', 'contact-ig-lbl': 'Instagram', 'contact-clk-lbl': 'Время работы',
+        'contact-clk-val': 'Круглосуточно, 7 дней в неделю',
+        'foot-brand-h': 'Ayza Lift — Аренда автовышки',
+        'foot-brand-p': 'Выполняем высотные работы надёжно и безопасно с автовышкой Hyundai HD 78. Круглосуточно, семь дней в неделю.',
+        'foot-col1-h': 'Разделы', 'foot-col2-h': 'Контакты',
+        'foot-copy': '© 2025 Ayza Lift. Все права защищены.',
+        'foot-slogan': '🚀 Поднимаемся на высоту — с вашим заданием!',
+        'wa-title': 'Написать в WhatsApp',
+        'wa-msg': 'Здравствуйте!%20Хочу%20узнать%20об%20аренде%20автовышки.'
+      }
+    };
+
+    let currentLang = 'kk';
+
+    function setLang(lang) {
+      currentLang = lang;
+      const t = translations[lang];
+      document.getElementById('html-root').lang = t['html-lang'];
+      document.title = t['title'];
+
+      // Nav links with data attrs
+      document.querySelectorAll('[data-kk]').forEach(el => {
+        const key = lang === 'kk' ? el.dataset.kk : el.dataset.ru;
+        if (key) el.textContent = key;
+      });
+
+      // Button active state
+      document.getElementById('btn-kk').classList.toggle('active', lang === 'kk');
+      document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
+
+      // Specific complex elements
+      const heroEyebrow = document.querySelector('.hero-eyebrow');
+      if (heroEyebrow) heroEyebrow.innerHTML = '<i class="fas fa-hard-hat"></i> ' + t['hero-eyebrow'];
+
+      const heroH1 = document.querySelector('.hero-h1');
+      if (heroH1) heroH1.innerHTML = t['hero-h1'];
+
+      const heroP = document.querySelector('.hero-p');
+      if (heroP) heroP.textContent = t['hero-p'];
+
+      document.getElementById('hero-call').innerHTML = t['hero-call-btn'];
+      document.getElementById('hero-wa').innerHTML = t['hero-wa-btn'];
+
+      // Stats labels
+      const statLabels = document.querySelectorAll('.stat-l');
+      ['stat1-l', 'stat2-l', 'stat3-l', 'stat4-l'].forEach((k, i) => { if (statLabels[i]) statLabels[i].textContent = t[k]; });
+
+      // Services section
+      document.querySelector('#services .eyebrow').innerHTML = '<i class="fas fa-cogs"></i> ' + t['svc-eyebrow'];
+      document.querySelector('#services .section-h2').textContent = t['svc-h2'];
+      document.querySelector('#services .section-lead').textContent = t['svc-lead'];
+
+      // Services items
+      const svcItems = [
+        {
+          kk: ['Биіктікке шығу жұмыстары', 'Жерден жеткізуге қиын биіктіктерге — платформа арқылы қауіпсіз және жедел шығу.'],
+          ru: ['Подъём на высоту', 'Безопасный и быстрый подъём на труднодоступные высоты через платформу.']
+        },
+        {
+          kk: ['Электр желілерін тарту', 'Жоғары және төмен вольтты желілерді монтаждау, жөндеу және қосу жұмыстары.'],
+          ru: ['Монтаж электросетей', 'Монтаж, ремонт и подключение высоковольтных и низковольтных сетей.']
+        },
+        {
+          kk: ['Ғимарат сырлау / жөндеу', 'Биік ғимараттардың сыртқы қабырғасын сырлау, жылуоқшаулау және жөндеу.'],
+          ru: ['Покраска / ремонт здания', 'Покраска, утепление и ремонт наружных стен высотных зданий.']
+        },
+        {
+          kk: ['Жарықтандыру монтажы', 'Көше шамдары, жарнама тақталары, LED жарықтар — орнату және жөндеу.'],
+          ru: ['Монтаж освещения', 'Уличные фонари, рекламные щиты, LED-освещение — монтаж и ремонт.']
+        },
+        {
+          kk: ['Ағаш кесу / абаттандыру', 'Биік ағаштарды қауіпсіз кесу, бұтақтарды жинау, аумақты тазалау.'],
+          ru: ['Обрезка деревьев / благоустройство', 'Безопасная срезка высоких деревьев, сбор веток, уборка территории.']
+        },
+        {
+          kk: ['Өзге де биіктік жұмыстары', 'Вентиляция, жабын, конструкция монтажы — кез келген тапсырма орындалады.'],
+          ru: ['Другие высотные работы', 'Вентиляция, кровля, монтаж конструкций — выполним любое задание.']
+        }
+      ];
+      document.querySelectorAll('.svc-item').forEach((el, i) => {
+        if (!svcItems[i]) return;
+        const d = lang === 'kk' ? svcItems[i].kk : svcItems[i].ru;
+        el.querySelector('h3').textContent = d[0];
+        el.querySelector('p').textContent = d[1];
+      });
+
+      // About section
+      document.querySelector('#about .eyebrow').innerHTML = '<i class="fas fa-truck-monster"></i> ' + t['about-eyebrow'];
+      document.querySelector('#about .section-h2').innerHTML = t['about-h2'];
+      document.querySelector('#about p[style]').textContent = t['about-p'];
+
+      // Spec boxes labels
+      const specLabels = ['Жұмыс биіктігі', 'Жұмыс ені', 'Платформа жүктемесі', 'Айналым бұрышы', 'Шасси маркасы', 'Модель'];
+      const specLabelsRu = ['Рабочая высота', 'Рабочая ширина', 'Нагрузка платформы', 'Угол поворота', 'Марка шасси', 'Модель'];
+      document.querySelectorAll('.spec-k').forEach((el, i) => {
+        el.textContent = lang === 'kk' ? (specLabels[i] || el.textContent) : (specLabelsRu[i] || el.textContent);
+      });
+
+      // Mosaic caps
+      const capLabels = lang === 'kk'
+        ? ['Автовышка паркі', 'Гаражда дайын', 'Кәсіби жүргізуші']
+        : ['Парк автовышек', 'Готова в гараже', 'Профессиональный водитель'];
+      document.querySelectorAll('.mosaic-cap').forEach((el, i) => { if (capLabels[i]) el.textContent = capLabels[i]; });
+
+      // Gallery
+      document.querySelector('#gallery .eyebrow').innerHTML = '<i class="fas fa-images"></i> ' + t['gal-eyebrow'];
+      document.querySelector('#gallery .section-h2').textContent = t['gal-h2'];
+      document.querySelector('#gallery .section-lead').textContent = t['gal-lead'];
+      const galLabels = lang === 'kk'
+        ? ['Автовышка паркі', 'HD 78 — гаражда', 'Кәсіби жүргізуші']
+        : ['Парк автовышек', 'HD 78 — в гараже', 'Профессиональный водитель'];
+      document.querySelectorAll('.gal-label').forEach((el, i) => { if (galLabels[i]) el.textContent = galLabels[i]; });
+
+      // Advantages
+      document.querySelector('#advantages .eyebrow').innerHTML = '<i class="fas fa-star"></i> ' + t['adv-eyebrow'];
+      document.querySelector('#advantages .section-h2').textContent = t['adv-h2'];
+      document.querySelector('#advantages .section-lead').textContent = t['adv-lead'];
+      const advCards = document.querySelectorAll('.adv-card');
+      ['adv1', 'adv2', 'adv3', 'adv4', 'adv5', 'adv6'].forEach((k, i) => {
+        if (!advCards[i]) return;
+        advCards[i].querySelector('h3').textContent = t[k + '-h'];
+        advCards[i].querySelector('p').textContent = t[k + '-p'];
+      });
+
+      // Korea section text via data attrs (already handled above by [data-kk])
+
+      // Contact
+      document.querySelector('#contact .eyebrow').innerHTML = '<i class="fas fa-headset"></i> ' + t['contact-eyebrow'];
+      document.querySelector('#contact .section-h2').textContent = t['contact-h2'];
+      document.querySelector('#contact .section-lead').textContent = t['contact-lead'];
+      document.querySelector('#card-phone h4').textContent = t['contact-phone-lbl'];
+      document.querySelector('#card-wa h4').textContent = t['contact-wa-lbl'];
+      document.querySelector('#card-ig h4').textContent = t['contact-ig-lbl'];
+      document.querySelector('.c-card[style] h4').textContent = t['contact-clk-lbl'];
+      document.querySelector('.c-card[style] p').textContent = t['contact-clk-val'];
+      document.querySelector('.cta-box h3').textContent = t['cta-h3'];
+      document.querySelector('.cta-box > p').textContent = t['cta-p'];
+      document.getElementById('bigcta-phone').innerHTML = t['cta-phone-btn'];
+      document.getElementById('bigcta-wa').innerHTML = t['cta-wa-btn'];
+
+      // WA links update message
+      const waMsg = t['wa-msg'];
+      document.querySelectorAll('a[href*="wa.me"]').forEach(a => {
+        a.href = `https://wa.me/+77076465902?text=${waMsg}`;
+      });
+
+      // Footer
+      document.querySelector('.foot-brand h3').textContent = t['foot-brand-h'];
+      document.querySelector('.foot-brand p').textContent = t['foot-brand-p'];
+      document.querySelectorAll('.foot-col h4')[0].textContent = t['foot-col1-h'];
+      document.querySelectorAll('.foot-col h4')[1].textContent = t['foot-col2-h'];
+      document.querySelector('.foot-bottom span:first-child').textContent = t['foot-copy'];
+      document.querySelector('.foot-slogan').textContent = t['foot-slogan'];
+
+      // Footer nav links
+      const footLinks = lang === 'kk'
+        ? ['Қызметтер', 'Автовышка', 'Галерея', 'Артықшылықтар', 'Байланыс']
+        : ['Услуги', 'Автовышка', 'Галерея', 'Преимущества', 'Контакты'];
+      document.querySelectorAll('.foot-col:first-of-type ul li a').forEach((a, i) => {
+        if (footLinks[i]) a.textContent = footLinks[i];
+      });
+    }
+  </script>
+</body>
+
+</html>
